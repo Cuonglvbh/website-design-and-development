@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+}
+/* Header Styling */
+header {
+    background-color: #333; /* Background color of the header */
+    color: #fff; /* Text color in the header */
+    padding: 1rem; /* Padding around the header content */
+    text-align: center; /* Center the text in the header */
+}
+
+nav {
+    display: flex; /* Use flexbox for the navigation */
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display list items in a row */
+}
+
+nav ul li {
+    margin: 0 1rem; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make link text bold */
+    padding: 0.5rem; /* Add padding around links */
+    border-radius: 5px; /* Rounded corners for the link */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+/* Responsive Design for Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Space between items in the vertical layout */
+    }
+}
+
